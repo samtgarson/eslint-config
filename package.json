@@ -1,6 +1,6 @@
 {
   "name": "@sohohouse/eslint-config",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Shared eslint config for Soho House",
   "main": "index.js",
   "repository": "https://github.com/SohoHouse/eslint-config",

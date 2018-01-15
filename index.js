@@ -47,7 +47,7 @@ module.exports = {
     'promise/prefer-await-to-callbacks': 'error',
     'import/no-dynamic-require': 'off',
     'import/no-extraneous-dependencies': ['error', {
-      'devDependencies': ['test/**/*', 'nuxt.config.js', 'rollup.config.js']
+      'devDependencies': ['test/**/*', 'nuxt.config.js', 'rollup.config.js', 'webpack.config.js']
     }]
   },
   settings: {
