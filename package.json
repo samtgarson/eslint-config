@@ -1,18 +1,15 @@
 {
-  "name": "@sohohouse/eslint-config",
+  "name": "@samtgarson/eslint-config",
   "version": "0.0.2",
-  "description": "Shared eslint config for Soho House",
+  "description": "Eslint config",
   "main": "index.js",
-  "repository": "https://github.com/SohoHouse/eslint-config",
+  "repository": "https://github.com/samtgarson/eslint-config",
   "license": "MIT",
-  "author": "software-devs@sohohouse.com",
-  "publishConfig": {
-    "registry": "https://nexus.ic.sohohousedigital.com/repository/npm-private"
-  },
+  "author": "samtgarson@gmail.com",
   "dependencies": {
     "babel-eslint": "^7.2.3",
     "eslint-config-airbnb": "^15.1.0",
-    "eslint-import-resolver-jest": "https://github.com/samtgarson/eslint-import-resolver-jest",
+    "eslint-import-resolver-jest": "^2.1.1",
     "eslint-plugin-html": "^3.2.0",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jest": "^20.0.3",
