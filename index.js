@@ -9,10 +9,10 @@ module.exports = {
     'jest/globals': true
   },
   extends: [
-    'airbnb/base',
-    'plugin:promise/recommended'
+    'airbnb-base',
+    'plugin:promise/recommended',
+    'plugin:vue/essential'
   ],
-  // required to lint *.vue files
   plugins: [
     'html',
     'jest',
@@ -20,20 +20,17 @@ module.exports = {
     'node',
     'promise'
   ],
-  // add your custom rules here
   rules: {
-    // don't require .vue extension when importing
     'import/extensions': ['error', {
       'js': 'never',
-      'vue': 'never',
+      'vue': 'never', // don't require .vue extension when importing
       'json': 'always',
     }],
     'comma-dangle': ['error', 'never'],
     'import/no-unresolved': 0,
     'space-before-function-paren': ['error', 'always'],
     'semi': ['error', 'never'],
-    // allow debugger during development
-    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
+    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0, // allow debugger during development
     'arrow-parens': ['error', 'as-needed'],
     'no-underscore-dangle': 'off',
     'no-confusing-arrow': 'off',
