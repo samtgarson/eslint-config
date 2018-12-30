@@ -1,8 +1,4 @@
 module.exports = {
-  "parser": "babel-eslint",
-  "parserOptions": {
-    "allowImportExportEverywhere": true
-  },
   env: {
     browser: true,
     node: true,
