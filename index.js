@@ -1,25 +1,11 @@
 module.exports = {
   env: {
     browser: true,
-    node: true,
-    'jest/globals': true
+    node: true
   },
-  extends: [
-    'airbnb-base',
-    'plugin:promise/recommended',
-    'plugin:vue/essential'
-  ],
-  plugins: [
-    'html',
-    'jest',
-    'import',
-    'node',
-    'promise'
-  ],
   rules: {
     'import/extensions': ['error', {
       'js': 'never',
-      'vue': 'never', // don't require .vue extension when importing
       'json': 'always',
     }],
     'comma-dangle': ['error', 'never'],
@@ -35,6 +21,7 @@ module.exports = {
     'no-multi-assign': 'off',
     'no-param-reassign': 'off',
     'global-require': 'off',
+    'object-curly-spacing': ['error', 'always'],
     'promise/avoid-new': 'off',
     'promise/prefer-await-to-then': 'error',
     'promise/prefer-await-to-callbacks': 'error',
