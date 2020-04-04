@@ -3,6 +3,13 @@ module.exports = {
     browser: true,
     node: true
   },
+  extends: [
+    "eslint:recommended"
+  ],
+  plugins: [
+    "import",
+    "promise"
+  ],
   rules: {
     'import/extensions': ['error', {
       'js': 'never',
@@ -32,14 +39,15 @@ module.exports = {
         'nuxt.config.js',
         'rollup.config.js',
         'webpack.config.js',
-        '**/__mocks__/**/*'
+        '**/__mocks__/**/*',
+        'build/**/*'
       ]
     }]
   },
   settings: {
     'import/resolver': {
       node: {
-        extensions: ['.js', '.vue', '.json']
+        extensions: ['.js', '.vue', '.json', '.ts', '.tsx']
       }
     },
   },
