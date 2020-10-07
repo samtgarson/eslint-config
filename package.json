@@ -1,6 +1,6 @@
 {
   "name": "@samtgarson/eslint-config",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "Eslint config",
   "main": "index.js",
   "repository": "https://github.com/samtgarson/eslint-config",
@@ -12,6 +12,8 @@
   },
   "optionalDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.26.0",
-    "@typescript-eslint/parser": "^2.26.0"
+    "@typescript-eslint/parser": "^2.26.0",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^4.0.0"
   }
 }
