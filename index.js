@@ -40,7 +40,9 @@ module.exports = {
         'rollup.config.js',
         'webpack.config.js',
         '**/__mocks__/**/*',
-        'build/**/*'
+        'build/**/*',
+        '**/*.spec.*',
+        '**/*.test.*'
       ]
     }]
   },

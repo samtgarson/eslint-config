@@ -1,19 +1,21 @@
 {
   "name": "@samtgarson/eslint-config",
-  "version": "2.3.1",
+  "version": "2.4.0",
   "description": "Eslint config",
   "main": "index.js",
   "repository": "https://github.com/samtgarson/eslint-config",
   "license": "MIT",
   "author": "samtgarson@gmail.com",
   "peerDependencies": {
-    "eslint-plugin-import": "^2.20.0",
-    "eslint-plugin-promise": "^4.2.1"
+    "eslint": "*",
+    "eslint-plugin-import": "*",
+    "eslint-plugin-promise": "*"
   },
   "optionalDependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.26.0",
-    "@typescript-eslint/parser": "^2.26.0",
-    "eslint-plugin-react": "^7.19.0",
-    "eslint-plugin-react-hooks": "^4.0.0"
+    "@typescript-eslint/eslint-plugin": "^4.15.0",
+    "@typescript-eslint/parser": "^4.15.0",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "typescript": "^4.1.3"
   }
 }

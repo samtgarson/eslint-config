@@ -6,6 +6,7 @@ module.exports = {
   extends: [
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
+    'plugin:import/typescript'
   ],
   rules: {
     '@typescript-eslint/explicit-function-return-type': 0,
@@ -20,9 +21,13 @@ module.exports = {
         }
       }
     ],
-    '@typescript-eslint/no-explicit-any': 0,
     '@typescript-eslint/no-use-before-define': 0,
     '@typescript-eslint/no-empty-function': 0,
-    '@typescript-eslint/ban-ts-ignore': 0
+    '@typescript-eslint/ban-ts-ignore': 0,
+    '@typescript-eslint/no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars-experimental': ['warn', {
+      ignoreArgsIfArgsAfterAreUsed: true
+    }]
+
   }
 }
