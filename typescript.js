@@ -27,7 +27,7 @@ module.exports = {
     '@typescript-eslint/no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars-experimental': ['warn', {
       ignoreArgsIfArgsAfterAreUsed: true
-    }]
-
+    }],
+    "@typescript-eslint/explicit-module-boundary-types": 0
   }
 }

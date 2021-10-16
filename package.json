@@ -1,6 +1,6 @@
 {
   "name": "@samtgarson/eslint-config",
-  "version": "2.4.0",
+  "version": "2.5.0",
   "description": "Eslint config",
   "main": "index.js",
   "repository": "https://github.com/samtgarson/eslint-config",

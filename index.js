@@ -4,16 +4,17 @@ module.exports = {
     node: true
   },
   extends: [
-    "eslint:recommended"
+    'eslint:recommended'
   ],
   plugins: [
-    "import",
-    "promise"
+    'import',
+    'promise'
   ],
   rules: {
     'import/extensions': ['error', {
       'js': 'never',
       'json': 'always',
+      'scss': 'always',
     }],
     'comma-dangle': ['error', 'never'],
     'import/no-unresolved': 0,
