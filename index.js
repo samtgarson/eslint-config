@@ -15,6 +15,10 @@ module.exports = {
       'js': 'never',
       'json': 'always',
       'scss': 'always',
+      'jpg': 'always',
+      'jpeg': 'always',
+      'png': 'always',
+      'svg': 'always'
     }],
     'comma-dangle': ['error', 'never'],
     'import/no-unresolved': 0,
