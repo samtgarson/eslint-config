@@ -22,7 +22,6 @@ module.exports = {
     }],
     'comma-dangle': ['error', 'never'],
     'import/no-unresolved': 0,
-    'space-before-function-paren': ['error', 'always'],
     'semi': ['error', 'never'],
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0, // allow debugger during development
     'arrow-parens': ['error', 'as-needed'],
