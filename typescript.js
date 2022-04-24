@@ -24,10 +24,7 @@ module.exports = {
     '@typescript-eslint/no-use-before-define': 0,
     '@typescript-eslint/no-empty-function': 0,
     '@typescript-eslint/ban-ts-ignore': 0,
-    '@typescript-eslint/no-unused-vars': 'off',
-    '@typescript-eslint/no-unused-vars-experimental': ['warn', {
-      ignoreArgsIfArgsAfterAreUsed: true
-    }],
+    '@typescript-eslint/no-unused-vars': 1,
     "@typescript-eslint/explicit-module-boundary-types": 0
   }
 }
