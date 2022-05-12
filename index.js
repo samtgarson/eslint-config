@@ -18,7 +18,9 @@ module.exports = {
       'jpg': 'always',
       'jpeg': 'always',
       'png': 'always',
-      'svg': 'always'
+      'svg': 'always',
+      'mp4': 'always',
+      'mp3': 'always'
     }],
     'comma-dangle': ['error', 'never'],
     'import/no-unresolved': 0,
