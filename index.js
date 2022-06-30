@@ -19,6 +19,7 @@ module.exports = {
       'jpeg': 'always',
       'png': 'always',
       'svg': 'always',
+      'wav': 'always',
       'mp4': 'always',
       'mp3': 'always'
     }],
@@ -26,7 +27,7 @@ module.exports = {
     'import/no-unresolved': 0,
     'semi': ['error', 'never'],
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0, // allow debugger during development
-    'arrow-parens': ['error', 'as-needed'],
+    'arrow-parens': ['error', 'always'],
     'no-underscore-dangle': 'off',
     'no-confusing-arrow': 'off',
     'no-return-assign': 'off',
