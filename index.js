@@ -13,6 +13,11 @@ module.exports = {
   rules: {
     'import/extensions': ['error', {
       'js': 'never',
+      'ts': 'never',
+      'tsx': 'never',
+      'jsx': 'never',
+      'server': 'always',
+      'client': 'always',
       'json': 'always',
       'scss': 'always',
       'jpg': 'always',
