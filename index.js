@@ -1,7 +1,6 @@
 import { defineConfig } from "eslint/config"
 import eslintPluginImportX from 'eslint-plugin-import-x'
 import promisePlugin from 'eslint-plugin-promise'
-import globals from "globals"
 import js from "@eslint/js"
 
 export { default as typescript } from "./typescript"
@@ -12,13 +11,6 @@ export default defineConfig([
   eslintPluginImportX.flatConfigs.recommended,
   promisePlugin.configs['flat/recommended'],
   {
-    languageOptions: {
-      globals: {
-        ...globals.browser,
-        ...globals.node,
-      },
-    },
-
     settings: {
       "import/resolver": {
         node: {

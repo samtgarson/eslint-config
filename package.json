@@ -1,6 +1,6 @@
 {
   "name": "@samtgarson/eslint-config",
-  "version": "3.2.0",
+  "version": "3.2.1",
   "description": "Eslint config",
   "main": "index.mjs",
   "repository": "https://github.com/samtgarson/eslint-config",
@@ -8,7 +8,8 @@
   "author": "samtgarson@gmail.com",
   "type": "module",
   "peerDependencies": {
-    "@eslint/config": "*",
+    "@eslint/js": "*",
+    "eslint": "*",
     "eslint-plugin-import-x": "*",
     "eslint-plugin-promise": "*"
   },
