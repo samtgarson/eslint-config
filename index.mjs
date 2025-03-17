@@ -9,7 +9,7 @@ export default defineConfig([
   promisePlugin.configs['flat/recommended'],
   {
     settings: {
-      "import/resolver": {
+      "import-x/resolver": {
         node: {
           extensions: [".js", ".vue", ".json", ".ts", ".tsx"],
         },
@@ -17,7 +17,7 @@ export default defineConfig([
     },
 
     rules: {
-      "import/extensions": ["error", {
+      "import-x/extensions": ["error", {
         js: "never",
         ts: "never",
         tsx: "never",
@@ -36,7 +36,7 @@ export default defineConfig([
       }],
 
       "comma-dangle": ["error", "never"],
-      "import/no-unresolved": 0,
+      "import-x/no-unresolved": 0,
       semi: ["error", "never"],
       "no-debugger": 0,
       "arrow-parens": ["error", "always"],
@@ -51,9 +51,8 @@ export default defineConfig([
       "promise/avoid-new": "off",
       "promise/prefer-await-to-then": "error",
       "promise/prefer-await-to-callbacks": "error",
-      "import/no-dynamic-require": "off",
-
-      "import/no-extraneous-dependencies": ["error", {
+      "import-x/no-dynamic-require": "off",
+      "import-x/no-extraneous-dependencies": ["error", {
         devDependencies: [
           "test/**/*",
           "nuxt.config.js",
