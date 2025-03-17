@@ -3,9 +3,6 @@ import eslintPluginImportX from 'eslint-plugin-import-x'
 import promisePlugin from 'eslint-plugin-promise'
 import js from "@eslint/js"
 
-export { default as typescript } from "./typescript"
-export { default as react } from "./react"
-
 export default defineConfig([
   js.configs.recommended,
   eslintPluginImportX.flatConfigs.recommended,
