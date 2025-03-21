@@ -1,12 +1,22 @@
 import { defineConfig } from "eslint/config"
 import eslintPluginImportX from 'eslint-plugin-import-x'
 import promisePlugin from 'eslint-plugin-promise'
+import stylistic from '@stylistic/eslint-plugin'
 import js from "@eslint/js"
 
 export default defineConfig([
   js.configs.recommended,
   eslintPluginImportX.flatConfigs.recommended,
   promisePlugin.configs['flat/recommended'],
+  stylistic.configs.customize({
+    indent: 2,
+    quotes: 'single',
+    semi: false,
+    jsx: true,
+    arrowParens: true,
+    braceStyle: '1tbs',
+    commaDangle: 'never'
+  }),
   {
     settings: {
       "import-x/resolver": {
@@ -17,6 +27,8 @@ export default defineConfig([
     },
 
     rules: {
+      "global-require": "off",
+      "import-x/no-dynamic-require": "off",
       "import-x/extensions": ["error", {
         js: "never",
         ts: "never",
@@ -34,24 +46,6 @@ export default defineConfig([
         mp4: "always",
         mp3: "always",
       }],
-
-      "comma-dangle": ["error", "never"],
-      "import-x/no-unresolved": 0,
-      semi: ["error", "never"],
-      "no-debugger": 0,
-      "arrow-parens": ["error", "always"],
-      "no-underscore-dangle": "off",
-      "no-confusing-arrow": "off",
-      "no-return-assign": "off",
-      "no-console": "off",
-      "no-multi-assign": "off",
-      "no-param-reassign": "off",
-      "global-require": "off",
-      "object-curly-spacing": ["error", "always"],
-      "promise/avoid-new": "off",
-      "promise/prefer-await-to-then": "error",
-      "promise/prefer-await-to-callbacks": "error",
-      "import-x/no-dynamic-require": "off",
       "import-x/no-extraneous-dependencies": ["error", {
         devDependencies: [
           "test/**/*",
@@ -64,5 +58,16 @@ export default defineConfig([
           "**/*.test.*",
         ],
       }],
+      "import-x/no-unresolved": 0,
+      "no-console": "off",
+      "no-debugger": 0,
+      "no-multi-assign": "off",
+      "no-param-reassign": "off",
+      "no-return-assign": "off",
+      "no-underscore-dangle": "off",
+      "object-curly-spacing": ["error", "always"],
+      "promise/avoid-new": "off",
+      "promise/prefer-await-to-callbacks": "error",
+      "promise/prefer-await-to-then": "error",
     },
   }])

@@ -16,7 +16,7 @@ export default defineConfig([
 
     rules: {
       "@typescript-eslint/explicit-function-return-type": 0,
-      "@typescript-eslint/member-delimiter-style": [2, {
+      "@stylistic/member-delimiter-style": [2, {
         multiline: {
           delimiter: "none",
         },
