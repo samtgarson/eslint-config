@@ -16,10 +16,10 @@ export default defineConfig([
           jsx: true,
         },
       },
+    },
 
-      rules: {
-        'react/prop-types': 0
-      },
-    }
+    rules: {
+      'react/prop-types': 0
+    },
   }
 ])
