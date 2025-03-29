@@ -10,6 +10,11 @@ export default defineConfig([
     plugins: {
       react,
     },
+    settings: {
+      react: {
+        version: 'detect',
+      },
+    },
     languageOptions: {
       parserOptions: {
         ecmaFeatures: {

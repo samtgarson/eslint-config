@@ -1,6 +1,6 @@
 {
   "name": "@samtgarson/eslint-config",
-  "version": "3.2.9",
+  "version": "3.2.10",
   "description": "Eslint config",
   "main": "index.mjs",
   "repository": "https://github.com/samtgarson/eslint-config",
