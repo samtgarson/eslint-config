@@ -7,13 +7,6 @@ export default defineConfig([
   tseslint.configs.recommendedTypeChecked,
   eslintPluginImportX.flatConfigs.typescript,
   {
-    languageOptions: {
-      parserOptions: {
-        projectService: true,
-        tsconfigRootDir: import.meta.dirname,
-      },
-    },
-
     rules: {
       "@typescript-eslint/ban-ts-ignore": 0,
       "@typescript-eslint/explicit-function-return-type": 0,
@@ -28,6 +21,8 @@ export default defineConfig([
         },
       }],
       "@typescript-eslint/no-empty-function": 0,
+      "@typescript-eslint/no-floating-promises": 0,
+      "@typescript-eslint/no-misused-promises": 0,
       "@typescript-eslint/no-unused-vars": 1,
       "@typescript-eslint/no-use-before-define": 0,
       "@typescript-eslint/require-await": 0,
