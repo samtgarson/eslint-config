@@ -8,15 +8,6 @@ export default defineConfig([
   js.configs.recommended,
   eslintPluginImportX.flatConfigs.recommended,
   promisePlugin.configs['flat/recommended'],
-  stylistic.configs.customize({
-    indent: 2,
-    quotes: 'single',
-    semi: false,
-    jsx: true,
-    arrowParens: true,
-    braceStyle: '1tbs',
-    commaDangle: 'never'
-  }),
   {
     settings: {
       "import-x/resolver": {
@@ -26,7 +17,14 @@ export default defineConfig([
       },
     },
 
+    plugins: {
+      "@stylistic": stylistic,
+    },
+
     rules: {
+      "@stylistic/comma-dangle": ["error", "never"],
+      "@stylistic/semi": ["error", "never"],
+      "@stylistic/arrow-parens": ["error", "always"],
       "global-require": "off",
       "import-x/no-dynamic-require": "off",
       "import-x/extensions": ["error", {
@@ -56,6 +54,7 @@ export default defineConfig([
           "build/**/*",
           "**/*.spec.*",
           "**/*.test.*",
+          "eslint.config.mjs",
         ],
       }],
       "import-x/no-unresolved": 0,
