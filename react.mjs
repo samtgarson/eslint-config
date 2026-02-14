@@ -1,14 +1,14 @@
 import { defineConfig } from "eslint/config"
 import react from 'eslint-plugin-react'
-import reactHooks from 'eslint-plugin-react-hooks';
+import reactHooks from 'eslint-plugin-react-hooks'
 
 export default defineConfig([
   react.configs.flat.recommended,
   react.configs.flat['jsx-runtime'],
-  reactHooks.configs['recommended-latest'],
   {
     plugins: {
       react,
+      'react-hooks': reactHooks,
     },
     settings: {
       react: {
@@ -24,7 +24,9 @@ export default defineConfig([
     },
 
     rules: {
-      'react/prop-types': 0
+      'react/prop-types': 0,
+      'react-hooks/rules-of-hooks': 'error',
+      'react-hooks/exhaustive-deps': 'warn',
     },
   }
 ])
