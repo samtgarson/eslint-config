@@ -7,6 +7,9 @@
   "license": "MIT",
   "author": "samtgarson@gmail.com",
   "type": "module",
+  "publishConfig": {
+    "@samtgarson:registry": "https://npm.pkg.github.com"
+  },
   "peerDependencies": {
     "@eslint/js": "*",
     "eslint": "*",
